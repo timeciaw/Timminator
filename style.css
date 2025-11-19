@@ -33,7 +33,7 @@
 }
 #food > h2 {
     font-size:  32px;  font-family:Arial, Helvetica, sans-serif
-    ; text-align: left; text-shadow:-1px 1px 2px fuchsia;position: relative; top: 0px; /* moves the element up 20px — increase/decrease as needed */; margin-left: 50px;
+    ; text-align: left; text-shadow:-1px 1px 2px fuchsia;position: relative; top: 0px; /* moves the element up 20px — increase/decrease as needed */; margin-left: 50px; ;
 }
 #food > p {
     font-size: 14px; font-family:Arial, Helvetica, sans-serif
@@ -70,11 +70,32 @@ h1 {
     background-color: rgb(243, 122, 243); padding: 20px; border-radius: 15px; border: 5px solid lightgray;
 }
 #socials {
-      font-size: 36px; color: rgb(209, 41, 211); text-align: right; margin-right: 50px; margin-top: -100px;
+      font-size: 50px; color: rgb(209, 41, 211); text-align: center; margin-top: 45px; 
 }
 .icon-text {
-    font-size: 16px; text-shadow: palevioletred 1px 1px 2px; color: rgba(0, 0, 0, 0.925); 
+    font-size: 16px; text-shadow: palevioletred 1px 1px 2px; color: rgba(0, 0, 0, 0.925);  font-family: Arial, Helvetica, sans-serif !important;
 }
 a {
-    text-decoration: none !important; text-decoration-style: none !important;
+    text-decoration: none !important;  
+}
+@media screen and (max-width: 600px) {
+    .selfie-1, .selfie-2 {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+}
+#pages {
+    list-style-type: none; margin: 20px; padding: 0; overflow: hidden; background-color: rgb(243, 122, 243); border-radius: 10px; border: 2px solid lightgray; width: fit-content; margin-left: auto; margin-right: auto; 
+    display: flex; justify-content: center; gap: 30px;
+}
+#pages li {
+    display: inline; color: whitesmoke; font-family: Arial, Helvetica, sans-serif; font-size: 18px; text-shadow: -1px 1px 2px black; 
+}
+#pagesocials {
+    font-size: 16px; font-family:Arial, Helvetica, sans-serif
+    ; color: rgb(211, 211, 211); text-align: center; text-shadow: 1px 1px 2px black;position: relative; top: -10px; /* moves the element up 20px — increase/decrease as needed */
 }
